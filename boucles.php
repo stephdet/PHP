@@ -1,58 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+
+
 <?php
 
-/*$pronoms_personnels = array ('Je', 'Tu', 'Il/Elle','Nous', 'Vous', 'Elles/Ils');
-
-foreach ($pronoms_personnels as $pre) {
-if ($pre=='Je') {
-	echo 'je code';
-}
-
-elseif ($pre=='Tu') {
-	echo 'Tu codes';
-}
-
-elseif ($pre=='IL') {
-	echo 'Il code';
-}
-
-elseif ($pre=='Nous') {
-	echo 'Nous codons';
-}
-
-}*/
-
-/*$number=0;
-
-
-while ($number <= 120) {
-$number+1;
-}
-
-echo $number;*/
-
-$number = 0;
-$target = 120;
-while ($number < $target) {
-    $number = $number  + 1;
-    echo $number;
-}
-
-
-for ($number=0; $number<=120 ; $number++) { 
-echo $number;
-}
-
-
-
-$collegues= array('Caroline','Marie-Ange','Albert','Stephabne','Jesus','Moise');
-
-foreach ($collegues as $Collegues) {
-	echo $Collegues;
-}
-
+$countries=array('Belgique','France','Espagne','Italie','Allemagne','Turquie','Finlande','Mexique','Norvège','Suisse');
+$countriesiso=array('BE'=>'Belgique','FR'=>'France','ES'=>'Espagne','IT'=>'Italie','AL'=>'Allemagne','TU'=>'Turquie','FI'=>'Finlande','ME'=>'Mexique','NO'=>'Norvège','SU'=>'Suisse');
 
 
 ?>
 
+<select>
+<?php
+foreach ($countries as $Country) {
+  echo '<option value="'.$Country.'">'.$Country.'</option>';
+}
+?>
+</select>
 
+<select>
+<select>
+<?php
+foreach ($countriesiso as $iso =>$Countries) {
+  echo '<option value="'.$iso.'">'.$Countries.'</option>';
+}
 
+?>
+</select>
+</body>
+</html>
